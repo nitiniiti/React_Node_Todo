@@ -1,9 +1,7 @@
-import md5 from 'md5';
+const md5 = require('md5');
 
-export const defaultState = {
-    session: {
-        authenticated: false
-    },
+
+const defaultState = {
     users: [{
         id: "U1",
         name: "Dev",
@@ -67,3 +65,5 @@ export const defaultState = {
         content: "Great work!"
     }]
 };
+
+module.exports = defaultState;
